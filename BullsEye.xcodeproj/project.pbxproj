@@ -14,6 +14,7 @@
 		FD39509A22489A2B0046D3F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD39509822489A2B0046D3F2 /* LaunchScreen.storyboard */; };
 		FD7991DA224B586700D7C8FA /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7991D9224B586700D7C8FA /* AboutViewController.swift */; };
 		FD7991DC224B611A00D7C8FA /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = FD7991DB224B611A00D7C8FA /* BullsEye.html */; };
+		FDF540C9224BA09300C5DB42 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF540C8224BA09300C5DB42 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FD39509B22489A2B0046D3F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD7991D9224B586700D7C8FA /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		FD7991DB224B611A00D7C8FA /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
+		FDF540C8224BA09300C5DB42 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDF540C9224BA09300C5DB42 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +47,7 @@
 			children = (
 				FD39508E22489A270046D3F2 /* BullsEye */,
 				FD39508D22489A270046D3F2 /* Products */,
+				FDF540C7224BA09200C5DB42 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +72,14 @@
 				FD39509B22489A2B0046D3F2 /* Info.plist */,
 			);
 			path = BullsEye;
+			sourceTree = "<group>";
+		};
+		FDF540C7224BA09200C5DB42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDF540C8224BA09300C5DB42 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
