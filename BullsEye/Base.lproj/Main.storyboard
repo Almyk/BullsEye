@@ -44,15 +44,14 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nYg-Is-zWv">
                                         <rect key="frame" x="0.0" y="80" width="568" height="80"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUT-PE-dXb">
-                                                <rect key="frame" x="78" y="23" width="9" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUT-PE-dXb">
+                                                <rect key="frame" x="158" y="32" width="8" height="16"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="WEn-Fi-bfW">
-                                                <rect key="frame" x="93" y="19" width="382" height="30"/>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="WEn-Fi-bfW">
+                                                <rect key="frame" x="172" y="32" width="204" height="17"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="200" id="gTm-cD-0tY"/>
                                                 </constraints>
@@ -60,15 +59,28 @@
                                                     <action selector="sliderMoved:" destination="BYZ-38-t0r" eventType="valueChanged" id="9Hy-b1-j6X"/>
                                                 </connections>
                                             </slider>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4NN-Z1-VgE">
-                                                <rect key="frame" x="481" y="22" width="29" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4NN-Z1-VgE">
+                                                <rect key="frame" x="382" y="32" width="28.5" height="16"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="fUT-PE-dXb" firstAttribute="leading" secondItem="nYg-Is-zWv" secondAttribute="leading" constant="158" id="2SH-oA-WlE"/>
+                                            <constraint firstAttribute="bottom" secondItem="4NN-Z1-VgE" secondAttribute="bottom" constant="32" id="5HD-Nh-9PA"/>
+                                            <constraint firstAttribute="bottom" secondItem="WEn-Fi-bfW" secondAttribute="bottom" constant="32" id="5gr-Xz-6Jx"/>
+                                            <constraint firstItem="WEn-Fi-bfW" firstAttribute="top" secondItem="nYg-Is-zWv" secondAttribute="top" constant="32" id="CBd-6J-V4y"/>
+                                            <constraint firstItem="WEn-Fi-bfW" firstAttribute="leading" secondItem="fUT-PE-dXb" secondAttribute="trailing" constant="8" id="Mbj-m0-wJJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="4NN-Z1-VgE" secondAttribute="trailing" constant="157.5" id="VJK-ec-LrN"/>
+                                            <constraint firstItem="4NN-Z1-VgE" firstAttribute="top" secondItem="nYg-Is-zWv" secondAttribute="top" constant="32" id="Y1G-op-cXs"/>
+                                            <constraint firstItem="4NN-Z1-VgE" firstAttribute="leading" secondItem="WEn-Fi-bfW" secondAttribute="trailing" constant="8" id="YqW-iU-Y7q"/>
+                                            <constraint firstItem="WEn-Fi-bfW" firstAttribute="leading" secondItem="fUT-PE-dXb" secondAttribute="trailing" constant="8" id="aRi-Ii-E6Z"/>
+                                            <constraint firstAttribute="bottom" secondItem="fUT-PE-dXb" secondAttribute="bottom" constant="32" id="b3n-pG-tlB"/>
+                                            <constraint firstItem="fUT-PE-dXb" firstAttribute="top" secondItem="nYg-Is-zWv" secondAttribute="top" constant="32" id="mAZ-29-hWg"/>
+                                            <constraint firstItem="4NN-Z1-VgE" firstAttribute="leading" secondItem="WEn-Fi-bfW" secondAttribute="trailing" constant="8" id="wYf-0S-Z2w"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0GD-8O-skM">
                                         <rect key="frame" x="0.0" y="160" width="568" height="80"/>
@@ -174,6 +186,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="slider" destination="WEn-Fi-bfW" id="WIr-an-Efd"/>
+                        <outlet property="targetLabel" destination="4Gb-iJ-0ZJ" id="EM1-DU-QzH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
