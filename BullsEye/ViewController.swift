@@ -62,6 +62,16 @@ class ViewController: UIViewController {
         print("The value of the slider is now: \(currentValue)")
     }
     
+    @IBAction func startOver(_ sender: UIButton) {
+        startNewGame()
+    }
+    
+    fileprivate func startNewGame() {
+        score = 0
+        round = 0
+        startNewRound()
+    }    
+    
     func startNewRound() {
         round += 1
         targetValue = Int.random(in: 1...100)

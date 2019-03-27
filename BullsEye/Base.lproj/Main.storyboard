@@ -109,6 +109,9 @@
                                                                 <rect key="frame" x="36" y="25" width="71" height="30"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <state key="normal" title="Start Over"/>
+                                                                <connections>
+                                                                    <action selector="startOver:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jmw-T6-mim"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
