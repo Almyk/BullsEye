@@ -201,7 +201,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="109.85915492957747" y="30"/>
+            <point key="canvasLocation" x="-16" y="23"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="HZw-8N-PCZ">
@@ -211,13 +211,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DHf-3Q-Ks4">
-                                <rect key="frame" x="0.0" y="0.0" width="568" height="262"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9F-ay-bJ6">
                                 <rect key="frame" x="264.5" y="270" width="39" height="30"/>
                                 <state key="normal" title="Close"/>
@@ -225,18 +218,29 @@
                                     <action selector="close:" destination="LmB-L9-09d" eventType="touchUpInside" id="2VN-8I-72E"/>
                                 </connections>
                             </button>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UGv-06-elr">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="262"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="nAj-Tg-6Zp" firstAttribute="bottom" secondItem="G9F-ay-bJ6" secondAttribute="bottom" constant="20" id="ATl-HO-S8E"/>
-                            <constraint firstItem="nAj-Tg-6Zp" firstAttribute="trailing" secondItem="DHf-3Q-Ks4" secondAttribute="trailing" id="Ejb-dt-UiU"/>
-                            <constraint firstItem="DHf-3Q-Ks4" firstAttribute="top" secondItem="nAj-Tg-6Zp" secondAttribute="top" id="Naa-gK-akx"/>
-                            <constraint firstItem="G9F-ay-bJ6" firstAttribute="top" secondItem="DHf-3Q-Ks4" secondAttribute="bottom" constant="8" id="gN1-CU-3n9"/>
+                            <constraint firstItem="UGv-06-elr" firstAttribute="leading" secondItem="nAj-Tg-6Zp" secondAttribute="leading" id="HbU-F6-AEC"/>
+                            <constraint firstItem="G9F-ay-bJ6" firstAttribute="top" secondItem="UGv-06-elr" secondAttribute="bottom" constant="8" id="Y6D-Hy-yRm"/>
+                            <constraint firstItem="nAj-Tg-6Zp" firstAttribute="trailing" secondItem="UGv-06-elr" secondAttribute="trailing" id="el6-20-e3S"/>
                             <constraint firstItem="G9F-ay-bJ6" firstAttribute="centerX" secondItem="qzu-Te-2tq" secondAttribute="centerX" id="i5h-1a-van"/>
-                            <constraint firstItem="DHf-3Q-Ks4" firstAttribute="leading" secondItem="nAj-Tg-6Zp" secondAttribute="leading" id="rc1-c9-Qeu"/>
+                            <constraint firstItem="UGv-06-elr" firstAttribute="top" secondItem="nAj-Tg-6Zp" secondAttribute="top" id="sqh-Q8-2bh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nAj-Tg-6Zp"/>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="UGv-06-elr" id="2nu-Pa-Nuu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yta-Vv-KUx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
