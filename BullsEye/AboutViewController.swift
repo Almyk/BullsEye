@@ -26,5 +26,10 @@ class AboutViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    
+    @IBAction func close(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }
