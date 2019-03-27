@@ -187,6 +187,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="scoreLabel" destination="fSc-1C-7tb" id="NG7-wD-DRp"/>
                         <outlet property="slider" destination="WEn-Fi-bfW" id="WIr-an-Efd"/>
                         <outlet property="targetLabel" destination="4Gb-iJ-0ZJ" id="EM1-DU-QzH"/>
                     </connections>
